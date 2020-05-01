@@ -1,0 +1,78 @@
+%% Based on a TeXnicCenter-Template by Gyorgy SZEIDL.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%------------------------------------------------------------
+%
+\documentclass[a4paper,12pt,leqno, notitlepage]{article}%
+%Options -- Point size:  10pt (default), 11pt, 12pt
+%        -- Paper size:  letterpaper (default), a4paper, a5paper, b5paper
+%                        legalpaper, executivepaper
+%        -- Orientation  (portrait is the default)
+%                        landscape
+%        -- Print size:  oneside (default), twoside
+%        -- Quality      final(default), draft
+%        -- Title page   notitlepage, titlepage(default)
+%        -- Columns      onecolumn(default), twocolumn
+%        -- Equation numbering (equation numbers on the right is the default)
+%                        leqno
+%        -- Displayed equations (centered is the default)
+%                        fleqn (equations start at the same distance from the right side)
+%        -- Open bibliography style (closed is the default)
+%                        openbib
+% For instance the command
+%           \documentclass[a4paper,12pt,leqno]{article}
+% ensures that the paper size is a4, the fonts are typeset at the size 12p
+% and the equation numbers are on the left side
+%
+ 
+\setlength{\parindent}{2.2em}
+\setlength{\parskip}{1.1em}
+\renewcommand{\baselinestretch}{1.1}
+\usepackage{amsmath}%
+\usepackage{amsfonts}%
+\usepackage{amssymb}%
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage[magyar]{babel}
+%-------------------------------------------
+\frenchspacing
+\sloppy
+
+% define references
+\newcommand{\figref}[1]{\ref{fig:#1}.}
+\renewcommand{\eqref}[1]{(\ref{eq:#1})}
+\newcommand{\listref}[1]{\ref{listing:#1}.}
+\newcommand{\sectref}[1]{section \ref{sect:#1}-\nameref{sect:#1}}
+\newcommand{\tabref}[1]{\ref{tab:#1}.}
+
+\begin{document}
+
+\title{bioinfo dolgozat}
+\author{Frank Dániel \\ Széchenyi István Egyetem, Győr
+				\and
+				Holczbauer Bálint \\ Széchenyi István Egyetem, Győr
+				\and
+				Horváth András \\ Széchenyi István Egyetem, Győr}
+\date{2020 május 1.}
+\maketitle
+
+\begin{abstract}
+
+Ez a dolgozat a Bevezetés a bioinformatikába tárgy keretén belül készült.
+Célja a \emph{Phylogenetic Diversity and the Greedy Algorithm}\cite{ptrrees_and_greedy} című tanulmány feldolgázsa és az eredmények bemutatása.
+A dolgozatban minden felmerülő definíciót tisztázunk és értelmezünk. Az olvasónak nem szükséges a szakterülezhez kapcsolódó előismeretekkel rendelkeznie.
+
+\end{abstract}
+
+\section{Szoftver\-fejlesztési módszerek}
+\label{sec:s}
+
+\bibliography{biblio}{}
+\bibliographystyle{plain}
+
+%\begin{thebibliography}{1}
+% Copy generated biblography here if you heve problem with accented characters
+%\end{thebibliography}
+
+
+\end{document}
